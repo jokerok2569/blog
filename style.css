@@ -1,0 +1,92 @@
+body{
+	font-family: sans-serif;
+	padding: 20px;
+	/*background: url(img/bcg.jpeg);*/
+}
+header{
+	background: #89E8DA;
+	padding: 40px;
+	text-align: center;
+	border-radius: 5px;
+}
+.card-header{
+	background: #89E8DA;
+	transition: 0.3s;
+	/*font-weight: 900;*/
+}
+.card-header .date{
+	color: darkgrey;
+	font-weight: 550;
+}
+.card-header:hover{
+	background: #5A8E87;
+	transition: 0.3s;
+}
+.img{
+	background: #aaa;
+	padding: 20px;
+	background-size: cover;
+	background-position: center;
+}
+.follow{
+	text-align: center;
+	font-size: 30px;
+	display: flex;
+	justify-content: space-around;
+	
+}
+.follow a{
+	text-decoration: none;
+	color: black;
+}
+
+footer{
+	background: #89E8DA;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+/*dark mode*/
+label{
+	position: absolute;
+	width: 45px;
+	height: 26px;
+	right: 20px;
+	top: 20px;
+	border:2px solid;
+	border-radius: 20px;
+}
+label:before{
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	left: 1px;
+	top: 1px;
+	border-radius: 50%;
+	cursor: pointer;
+	background: black;
+	transition: 0.4s;
+}
+label.active:before{
+	left: 21px;
+	background: whitesmoke;
+	color: black;
+}
+body.dark{
+	background: #2A2A2A;
+}
+.theme{
+	background: #5A8E87;
+	border: none !important;
+	color: white;
+}
+.card-header.theme:hover {
+	background: #89E8DA;
+}
+.card-body.theme{
+	background: #2A2A2A;
+}
